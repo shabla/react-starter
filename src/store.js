@@ -1,10 +1,12 @@
 import { configureStore } from 'redux-starter-kit';
 
-import test from "./common/reducers/test.reducer"
+import { reducer as home } from "./modules/home"
+import { reducer as todos } from "./modules/todos"
 
 const store = configureStore({
     reducer: {
-        test
+        home,
+        todos
     }
 });
 
